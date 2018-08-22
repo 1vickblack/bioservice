@@ -606,4 +606,16 @@ aside .menu .main-link {
         .small-application-form .bot .form-check {
           width: 100%; } }
 
+/*callback-modal*/
+.callback-modal {
+  width: 500px; }
+  .callback-modal .mb {
+    margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .callback-modal {
+      width: 60%; } }
+  @media (max-width: 575px) {
+    .callback-modal {
+      width: 90%; } }
+
 /*# sourceMappingURL=main.css.map */

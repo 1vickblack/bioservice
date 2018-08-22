@@ -83,6 +83,34 @@ function phb_insert_meta_tags()
     if ($meta['keywords']) {
         echo "<meta name=\"keywords\" content=\"{$meta['keywords']}\">";
     }
+    if ($meta['title-og']) {
+        echo "<meta property=\"og:title\" content=\"{$meta['title-og']}\">";
+    }else{
+        echo "<meta property=\"og:title\" content=\"{$meta['title']}\">";
+    }
+    if ($meta['description-og']) {
+        echo "<meta property=\"og:description\" content=\"{$meta['description-og']}\">";
+    }else{
+        echo "<meta property=\"og:description\" content=\"{$meta['description']}\">";
+    }
+    if ($meta['image-og']) {
+        echo "<meta property=\"og:image\" content=\"{$meta['image-og']}\">";
+    }else{
+        echo "<meta property=\"og:image\" content=\"/img/logo.png\">";
+    }
+    if ($meta['type-og']) {
+        echo "<meta property=\"og:type\" content=\"{$meta['type-og']}\">";
+    }else{
+        echo "<meta property=\"og:type\" content=\"article\">";
+    }
+
+    $path_og = $_SERVER['HTTP_X_FORWARDED_PROTO'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+    if ($meta['url-og']) {
+        echo "<meta property=\"og:url\" content=\"{$meta['url-og']}\">";
+    }else{
+        echo "<meta property=\"og:url\" content=\"{$path_og}\">";
+    }
 }
 /**
  * Add CSS class to body tag if it has been specified for current page

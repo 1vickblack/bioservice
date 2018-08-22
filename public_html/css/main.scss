@@ -712,3 +712,18 @@ aside{
     }
   }
 }
+
+/*callback-modal*/
+
+.callback-modal{
+  width: 500px;
+  .mb{
+    margin-bottom: 30px;
+  }
+  @media(max-width: 767px){
+    width: 60%;
+  }
+  @media(max-width: 575px){
+    width: 90%;
+  }
+}

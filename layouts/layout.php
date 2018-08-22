@@ -3,7 +3,6 @@
 	<head>
 		<?php phb_insert_meta_tags(); ?>
 		<?php phb_insert_css('bootstrap.min'); ?>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<?php phb_insert_css('bootstrap-grid.min'); ?>
 		<?php phb_insert_css('jquery.fancybox.min'); ?>
 		<?php phb_insert_css('main'); ?>
@@ -58,7 +57,7 @@
 						<div class="small-text">c 9.00 до 20.00 без обеда и выходных</div>
 					</div>
 					<div>
-						<button class="white-btn" anim="ripple">Заказать&nbsp;звонок</button>
+						<button data-fancybox data-src="#callbackModal" class="white-btn" anim="ripple">Заказать&nbsp;звонок</button>
 					</div>
 				</div>
 			</div>
@@ -98,6 +97,28 @@
 			</div>
 		</footer>
 
+	<div style="display: none;" class="callback-modal" id="callbackModal">
+		<div class="h2 mb">Заказать звонок</div>
+		<form action="">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Имя*">
+			</div>
+			<div class="form-group mb">
+				<input type="tel" class="form-control" placeholder="Телефон*">
+			</div>
+			<div class="form-group mb">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="konf">
+			      <label class="form-check-label" for="konf">Я согласен на обработку и хранение моих персональных данных в соответствии с <a class="pink" href="/politika-konfidencialnosti">политикой конфиденциальности</a></label>
+			    </div>
+			</div>
+			<div>
+				<button class="pink-btn" anim="ripple">Заказать&nbsp;звонок</button>
+			</div>
+		</form>
+	</div>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
 	<? phb_insert_js('jquery-3.3.1.min'); ?>
 	<? phb_insert_js('bootstrap.min'); ?>
 	<? phb_insert_js('jquery.fancybox.min'); ?>
