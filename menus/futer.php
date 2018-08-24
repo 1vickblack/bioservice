@@ -8,18 +8,12 @@ return [
         'body_class' => '',
     ],
     'vopros-otvet' => [
-        'file' => 'vopros-otvet',
+        'file' => 'vopros_otvet',
         'name' => 'Вопрос-ответ',
         'layout' => '',
         'body_class' => '',
     ],
-    'otzyvy' => [
-        'file' => 'otzyvy',
-        'name' => 'Отзывы',
-        'layout' => '',
-        'body_class' => '',
-    ],
-    'news' => [
+    'novosty' => [
         'file' => 'novosty',
         'name' => 'Новости',
         'layout' => '',

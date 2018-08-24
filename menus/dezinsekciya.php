@@ -2,37 +2,37 @@
 
 return [
     'dezinsekciya/unichtozhenie-klopov' => [
-        'file' => 'klopy',
+        'file' => 'dezinsekciya/klopy',
         'name' => 'Клопы',
         'layout' => '',
         'body_class' => ''
     ],
     'dezinsekciya/unichtozhenie-tarakanov' => [
-        'file' => 'tarakany',
+        'file' => 'dezinsekciya/tarakany',
         'name' => 'Тараканы',
         'layout' => '',
         'body_class' => ''
     ],
     'dezinsekciya/unichtozhenie-muravjev' => [
-        'file' => 'muravii',
+        'file' => 'dezinsekciya/muravi',
         'name' => 'Муравьи',
         'layout' => '',
         'body_class' => ''
     ],
     'dezinsekciya/unichtozhenie-muh' => [
-        'file' => 'muhi',
+        'file' => 'dezinsekciya/muhi',
         'name' => 'Мухи',
         'layout' => '',
         'body_class' => ''
     ],
     'dezinsekciya/unichtozhenie-bloh' => [
-        'file' => 'blohi',
+        'file' => 'dezinsekciya/blohi',
         'name' => 'Блохи',
         'layout' => '',
         'body_class' => ''
     ],
     'dezinsekciya/unichtozhenie-kleschej' => [
-        'file' => 'kleshi',
+        'file' => 'dezinsekciya/kleshi',
         'name' => 'Клещи',
         'layout' => '',
         'body_class' => ''

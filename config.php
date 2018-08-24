@@ -14,7 +14,8 @@ return [
         'dezinfekciya',
         'dezinsekciya',
         'prodazha_dezsredstv',
-        'futer'
+        'futer',
+        'stranici'
     ],
     'modules_class_prefix' => 'module',
 ];

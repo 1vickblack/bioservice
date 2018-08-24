@@ -1,185 +1,79 @@
 <p class="mb">Мы предлагаем услуги дератизации (уничтожение крыс и мышей) и дезинсекции (выведение муравьев, клопов, тараканов и других насекомых) в СПб и Ленинградской области. Кроме того, осуществляем оптово-розничную продажу препаратов для избавления от вредителей.</p>
 
+
 <div class="table-responsive mb">
-  <table class="table hide-on-mobile">
-    <thead>
-        <tr>
-          <th class="title">Количество комнат</th>
-          <th class="title">Cтарая цена</th>
-          <th class="title">Новая цена</th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1 комната</td>
-          <td class="old">1400&nbsp;руб</td>
-          <td class="new">от&nbsp;900&nbsp;руб</td>
-          <td>+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-        </tr>
-        <tr>
-          <td>1-комнатная квартира</td>
-          <td class="old">1700&nbsp;руб</td>
-          <td class="new">от&nbsp;1000&nbsp;руб</td>
-          <td>+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-        </tr>
-        <tr>
-          <td>2х-комнатная квартира</td>
-          <td class="old">2000&nbsp;руб</td>
-          <td class="new">от&nbsp;1600&nbsp;руб</td>
-          <td>+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-        </tr>
-        <tr>
-          <td>3х-комнатная квартира</td>
-          <td class="old">2300&nbsp;руб</td>
-          <td class="new">от&nbsp;1800&nbsp;руб</td>
-          <td>+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-        </tr>
-        <tr>
-          <td>4х-комнатная квартира</td>
-          <td class="old">3000&nbsp;руб</td>
-          <td class="new">от&nbsp;2000&nbsp;руб</td>
-          <td>+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-        </tr>
-        <tr>
-          <td>+ жилая комната</td>
-          <td>+&nbsp;400&nbsp;руб</td>
-          <td>+&nbsp;400&nbsp;руб</td>
-          <td></td>
-        </tr>
-      </tbody>
-  </table>
-
-  <table class="table hide-on-desktop">
-	<tbody>
-		<tr>
-			<td class="title">Количество комнат</td>
-			<td>1 комната</td>
-		</tr>
-		<tr>
-			<td class="title">Cтарая цена</td>
-			<td class="old">1400&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td class="title">Новая цена</td>
-			<td class="new">от&nbsp;900&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td colspan="2" class="tac">+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-		</tr>
-		<!--  -->
-		<tr>
-			<td class="title">Количество комнат</td>
-			<td>1-комнатная квартира</td>
-		</tr>
-		<tr>
-			<td class="title">Cтарая цена</td>
-			<td class="old">1700&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td class="title">Новая цена</td>
-			<td class="new">от&nbsp;1000&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td colspan="2" class="tac">+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-		</tr>
-		<!--  -->
-		<tr>
-			<td class="title">Количество комнат</td>
-			<td>2х-комнатная квартира</td>
-		</tr>
-		<tr>
-			<td class="title">Cтарая цена</td>
-			<td class="old">2000&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td class="title">Новая цена</td>
-			<td class="new">от&nbsp;1600&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td colspan="2" class="tac">+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-		</tr>
-		<!--  -->
-		<tr>
-			<td class="title">Количество комнат</td>
-			<td>3х-комнатная квартира</td>
-		</tr>
-		<tr>
-			<td class="title">Cтарая цена</td>
-			<td class="old">2300&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td class="title">Новая цена</td>
-			<td class="new">от&nbsp;1800&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td colspan="2" class="tac">+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-		</tr>
-		<!--  -->
-		<tr>
-			<td class="title">Количество комнат</td>
-			<td>4х-комнатная квартира</td>
-		</tr>
-		<tr>
-			<td class="title">Cтарая цена</td>
-			<td class="old">3000&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td class="title">Новая цена</td>
-			<td class="new">от&nbsp;2000&nbsp;руб</td>
-		</tr>
-		<tr>
-			<td colspan="2" class="tac">+ барьер в подарок (гарантия&nbsp;2&nbsp;года)</td>
-		</tr>
-		<!--  -->
-		<tr>
-			<td class="title">+ жилая комната</td>
-			<td>+&nbsp;400&nbsp;руб</td>
-		</tr>
-
-	</tbody>
-  </table>
+<?
+	$GLOBALS['prices'] = [
+		'type' => 'static',
+		'room' => [
+			'old' => '1400',
+			'new' => '900'
+		],
+		'1-room-flat' => [
+			'old' => '1700',
+			'new' => '1000'
+		],
+		'2-room-flat' => [
+			'old' => '2000',
+			'new' => '1600'
+		],
+		'3-room-flat' => [
+			'old' => '2300',
+			'new' => '1800'
+		],
+		'4-room-flat' => [
+			'old' => '3000',
+			'new' => '2000'
+		],
+		'living-room' => [
+			'old' => '+400',
+			'new' => '+400'
+		]
+	];
+?>
+<?phb_insert_module('prices_table');?>
 </div>
 
+
 <section class="advantages">
-	<h2 class="mb">Преимущества сотрудничества с ООО «Био&#8209;Сервис»</h2>
+	<h2>Преимущества сотрудничества с ООО «Био&#8209;Сервис»</h2>
 	<div class="advantages-wrap row mb">
 		<div class="col-md-6">
 			<div class="row align-items-center item">
-				<img class="col-12 col-sm-4" src="/img/svg-home-icons/01.svg" alt="">
+				<img class="col-12 col-sm-4" src="/img/svg_home_icons/01.svg" alt="">
 				<p class="col-12 col-sm-7">Проводить обработку будет хорошо 
 				подготовленный опытный специалист.</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="row align-items-center item">
-				<img class="col-12 col-sm-4" src="/img/svg-home-icons/04.svg" alt="">
+				<img class="col-12 col-sm-4" src="/img/svg_home_icons/04.svg" alt="">
 				<p class="col-12 col-sm-7">Гарантия на все услуги 12 месяцев.</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="row align-items-center item">
-				<img class="col-12 col-sm-4" src="/img/svg-home-icons/02.svg" alt="">
+				<img class="col-12 col-sm-4" src="/img/svg_home_icons/02.svg" alt="">
 				<p class="col-12 col-sm-7">Используются разные виды обработок (
 				влажная, холодный и горячий туман, дымовые шашки и т.д.).</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="row align-items-center item">
-				<img class="col-12 col-sm-4" src="/img/svg-home-icons/05.svg" alt="">
+				<img class="col-12 col-sm-4" src="/img/svg_home_icons/05.svg" alt="">
 				<p class="col-12 col-sm-7">Дезинсекция будет проведена конфиденциально.</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="row align-items-center item">
-				<img class="col-12 col-sm-4" src="/img/svg-home-icons/03.svg" alt="">
+				<img class="col-12 col-sm-4" src="/img/svg_home_icons/03.svg" alt="">
 				<p class="col-12 col-sm-7">В квартире будет использоваться только 
 				безопасные препараты.</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="row align-items-center item">
-				<img class="col-12 col-sm-4" src="/img/svg-home-icons/06.svg" alt="">
+				<img class="col-12 col-sm-4" src="/img/svg_home_icons/06.svg" alt="">
 				<p class="col-12 col-sm-7">Лучшие цены в СПБ и Лен. области.</p>
 			</div>
 		</div>
@@ -193,25 +87,25 @@
 	<form action="">
 		<div class="form-row">
 			<div class="form-group col-md-4">
-				<input type="text" class="form-control" placeholder="Имя">
+				<input type="text" class="form-control" placeholder="Имя*">
 			</div>
 			<div class="form-group col-md-4">
-				<input type="tel" class="form-control" placeholder="Телефон">
+				<input type="tel" class="form-control" placeholder="Телефон*">
 			</div>
 			<div class="form-group col-md-4">
 				<select class="form-control">
 					<option selected style="display: none">Вид услуги</option>
-					<option>Услуга 2</option>
-					<option>Услуга 3</option>
-					<option>Услуга 4</option>
+					<?php foreach ($GLOBALS['menu_uslugi'] as $key => $value): ?>
+						<option value="<?=$value['name']?>"><?=$value['name']?></option>
+					<?php endforeach ?>
 				</select>
 			</div>
 		</div>
 		<div class="bot">
 			<div class="form-group">
 			    <div class="form-check">
-			      <input class="form-check-input" type="checkbox" id="konf">
-			      <label class="form-check-label" for="konf">Я согласен на обработку и хранение моих персональных данных в соответствии с <a class="pink" href="/politika-konfidencialnosti">политикой конфиденциальности</a></label>
+			      <input class="form-check-input" checked type="checkbox" id="konf">
+			      <label class="form-check-label" for="konf">Я согласен на обработку и хранение моих персональных данных в соответствии с <a class="pink" href="/politika-konfidencialnosti" target="_blank">политикой конфиденциальности</a></label>
 			    </div>
 			</div>
 			<div>

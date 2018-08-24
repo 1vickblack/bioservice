@@ -79,6 +79,14 @@ body{
   font-weight: bold;
 }
 
+#totop{
+  opacity: 0;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
 a{
   text-decoration: none !important;
 }
@@ -108,6 +116,30 @@ a:hover{
   margin-bottom: 40px;
 }
 
+.mt{
+  margin-top: 40px;
+}
+
+h1, .h1, h2, .h2{
+  color: $green;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 30px;
+  @media(max-width: 767px){
+    font-size: 26px;
+  }
+}
+
+p{
+  margin-bottom: 20px;
+}
+
+h2, .h2{
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+
 button{
   padding: 7px 20px;
   text-transform: uppercase;
@@ -117,6 +149,10 @@ button{
   &:focus, &:active, &:hover{
     outline: none;
   }
+}
+
+.embed-responsive{
+  margin-bottom: 15px;
 }
 
 .white-btn, .pink-btn{
@@ -144,22 +180,37 @@ button{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  white-space: pre-wrap;
 }
 
-h1, h2, .h2{
-  color: $green;
-  text-transform: uppercase;
-  font-size: 30px;
-  &+p{
-    margin: 30px 0;
-  }
-  @media(max-width: 767px){
-    font-size: 26px;
-  }
+img{
+  max-width: 100%;
 }
 
-h2, .h2{
-  font-size: 25px;
+label{
+  cursor: pointer;
+}
+
+p{
+  img{
+    margin: 15px;
+  }
+  img.right{
+    float: right;
+    @media(max-width: 767px){
+      float: none;
+      display: block;
+      margin: 15px 0;
+    }
+  }
+  img.left{
+    float: left;
+    @media(max-width: 767px){
+      float: none;
+      display: block;
+      margin: 15px 0;
+    }
+  }
 }
 
 .table{
@@ -191,7 +242,7 @@ h2, .h2{
 header{
   border-bottom: 3px solid $green;
   padding-bottom: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   .top{
     background: $green;
     color: #fff;
@@ -385,7 +436,7 @@ header{
 /*footer*/
 
 footer{
-  margin-top: 20px;
+  margin-top: 30px;
   .top{
     border-top: 3px solid $green; 
     border-bottom: 3px solid $green;
@@ -538,9 +589,7 @@ aside{
   margin: 50px 0;
   .flex-items{
     flex-wrap: wrap;
-    @media(max-width: 991px){
-      justify-content: space-around;
-    }
+    justify-content: space-around;
   }
   .item{
     text-align: center;
@@ -580,6 +629,20 @@ aside{
       margin: 15px 0;
     }
   }
+}
+
+.img-list-services.preview{
+   img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px;
+    @media(max-width: 320px){
+      width: 150px;
+      height: 150px;
+    }
+   }
 }
 
 .top-banner{
@@ -687,7 +750,7 @@ aside{
   background-position: center;
   padding: 30px 25px;
  .h2{
-    margin-bottom: 30px;
+    margin-top: 0;
   }
   .form-row{
     margin-bottom: 10px;
@@ -717,6 +780,9 @@ aside{
 
 .callback-modal{
   width: 500px;
+  .h2{
+    margin-top: 0px;
+  }
   .mb{
     margin-bottom: 30px;
   }
@@ -725,5 +791,13 @@ aside{
   }
   @media(max-width: 575px){
     width: 90%;
+  }
+}
+
+.gallery{
+  a{
+    display: inline-block;
+    outline: none;
+    margin-bottom: 10px;
   }
 }

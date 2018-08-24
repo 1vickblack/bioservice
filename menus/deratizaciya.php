@@ -2,13 +2,13 @@
 
 return [
     'deratizaciya/unichtozhenie-krys' => [
-        'file' => 'krysy',
+        'file' => 'deratizaciya/krysy',
         'name' => 'Крысы',
         'layout' => '',
         'body_class' => ''
     ],
     'deratizaciya/unichtozhenie-myshey' => [
-        'file' => 'myshi',
+        'file' => 'deratizaciya/myshi',
         'name' => 'Мыши',
         'layout' => '',
         'body_class' => ''

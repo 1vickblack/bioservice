@@ -108,8 +108,8 @@
 			</div>
 			<div class="form-group mb">
 			    <div class="form-check">
-			      <input class="form-check-input" type="checkbox" id="konf">
-			      <label class="form-check-label" for="konf">Я согласен на обработку и хранение моих персональных данных в соответствии с <a class="pink" href="/politika-konfidencialnosti">политикой конфиденциальности</a></label>
+			      <input class="form-check-input" checked type="checkbox" id="konf">
+			      <label class="form-check-label" for="konf">Я согласен на обработку и хранение моих персональных данных в соответствии с <a class="pink" href="/politika-konfidencialnosti" target="_blank">политикой конфиденциальности</a></label>
 			    </div>
 			</div>
 			<div>
@@ -117,6 +117,8 @@
 			</div>
 		</form>
 	</div>
+
+	<div id="totop" title="Наверх"><img src="/img/to_top.png" alt=""></div>
 
 	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
 	<? phb_insert_js('jquery-3.3.1.min'); ?>
